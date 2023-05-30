@@ -26,7 +26,7 @@ namespace Screens
         public bool startHired = false;
 
         [Header("Animation")]
-        private float animationDuration = .3f;
+        public float animationDuration = .3f;
         private float delayBetweemObjects = .05f;
 
         private void Start()

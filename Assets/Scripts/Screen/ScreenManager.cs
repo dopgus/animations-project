@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ebac.Core.Singleton;
+using DG.Tweening;
 
 namespace Screens
 {
@@ -17,6 +18,11 @@ namespace Screens
         {
             HideAll();
             ShowByType(startScreen);
+        }
+
+        private void GetRandom()
+        {
+            screenBases[Random.Range(0, screenBases.Count)].animationDuration = 1;
         }
 
         public void ShowByType(ScreenType type)
